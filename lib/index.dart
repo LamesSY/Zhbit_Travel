@@ -4,7 +4,7 @@ import 'pages/map_page.dart';
 import 'pages/user_page.dart';
 
 
-import 'bottom/bottom.dart'; // 如果是在同一个包的路径下，可以直接使用对应的文件名
+import 'bottom/bottom.dart'; 
 
 // 创建一个 带有状态的 Widget Index
 class Index extends StatefulWidget {
@@ -33,7 +33,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin{
 
     // 初始化导航图标
     _navigationViews = <NavigationIconView>[
-      new NavigationIconView(icon: new Icon(Icons.assessment), title: new Text("首页"), vsync: this), // vsync 默认属性和参数
+      new NavigationIconView(icon: new Icon(Icons.assessment), title: new Text("首页"), vsync: this), 
       new NavigationIconView(icon: new Icon(Icons.all_inclusive), title: new Text("想法"), vsync: this),
       new NavigationIconView(icon: new Icon(Icons.perm_identity), title: new Text("我的"), vsync: this),
     ];
@@ -75,13 +75,13 @@ class _IndexState extends State<Index> with TickerProviderStateMixin{
     return new MaterialApp(
       home: new Scaffold(
         body: new Center(
-            child: _currentPage   // 动态的展示我们当前的页面
+            child: _currentPage   
         ),
         bottomNavigationBar: bottomNavigationBar,   // 底部工具栏
       ),
 
       theme: new ThemeData(
-        primarySwatch: Colors.blue,   // 设置主题颜色
+        primarySwatch: Colors.blue,   
       ),
 
     );
